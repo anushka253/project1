@@ -1,9 +1,19 @@
+{% load static %}
 <html>
     <head>
         <title>login</title>
+        <style>
+            body{
+                background-color: aliceblue;
+            }
+            h1{
+                background-color: aquamarine;
+            }
+        </style>
+        <link rel="stylesheet" href="{% static 'css/external.css' %}">
     </head>
     <body >
-        <center><h1>LOGIN PAGE</h1>
+        <center><h1 style="color:yellowgreen">Welcome to Thalassery</h1>
         <br><br>
         Name:
         <input type="text" nam="nam">
