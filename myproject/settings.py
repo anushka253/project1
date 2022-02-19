@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-03^*q(6*8b##-!i-4rx+ha-gp=8jq(brgy-he$tao-2_y+m_zk
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -124,5 +124,5 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
+StaticFiles_Storage='whitenoise.storage.CompressedManifestStaticFilesStorage'
 
