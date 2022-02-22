@@ -129,3 +129,6 @@ STATICFILES_DIRS=[
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 StaticFiles_Storage='whitenoise.storage.CompressedManifestStaticFilesStorage'
 
+
+
+
