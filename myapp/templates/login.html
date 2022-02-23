@@ -12,9 +12,13 @@
                 background-color: aquamarine;
             }
         </style>
+        <script type="text/javascript" >
+            document.write("Hello");
+        </script>
         <link rel="stylesheet" href="{% static 'css/external.css' %}">
+        <script src="{% static 'js/one.js' %}"></script>
     </head>
-    <body >
+    <body style="background-color: cornflowerblue;">
         <!-- <center><h1 style="color:yellowgreen">Welcome to Thalassery</h1>
         <br><br>
         Name:
@@ -27,11 +31,11 @@
         <button type="button" class="btn btn-success">Success</button>
     </center> -->
         <div class="container-fluid">
-            <div class="row"  style="height: 100%;">
-                <div class="col-lg-3"style="background-color: cornflowerblue;">
+            <div class="row" >
+                <div class="col-lg-3">
                     <h3>hello</h3>
                 </div>
-                <div class="col-lg-6" >
+                <div class="col-lg-6" style="background-color: white;">
                     <br><br>
                     <center>
                         <ul class="nav justify-content-end">
@@ -56,13 +60,16 @@
                     <input type="password" name="pas">
                     <br><br><br>
                     <input type="Submit" name="sub"><br><br>
-                    <button type="button" class="btn btn-success">Success</button>
+                    <input type="button" onClick="alert('warning')" value="ok">
+                    <button type="button" class="btn btn-success" onclick="fun()">Success</button>
                 </form>
                 </div>
+               
             </center>
-                <div class="col-lg-3"style="background-color: cornflowerblue;">
+           
+                <!-- <div class="col-lg-3"style="background-color: cornflowerblue;">
                     <h3>hello</h3>
-                </div>
+                </div> -->
             </div>
           
         </div>
