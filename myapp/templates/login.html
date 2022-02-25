@@ -34,7 +34,12 @@
             }
             $(document).ready(function(){
                 $("p").css("background-color","cyan");
+                $("#btn").click(function(){
+                console.log("okay")
+                $(this).hide();
             });
+            });
+           
         </script>
         <link rel="stylesheet" href="{% static 'css/external.css' %}">
         <script src="{% static 'js/one.js' %}"></script>
@@ -86,6 +91,7 @@
                     <input type="button" onClick="alert('warning')" value="ok">
                     <button type="button" class="btn btn-success" onclick="fun()">Success</button>
                     <p>hello!!</p>
+                    <input type="button" id="btn" value="click me">
                 </form>
                 </div>
                
